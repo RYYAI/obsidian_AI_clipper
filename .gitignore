@@ -1,0 +1,62 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local agent context
+.context
+.cursorrules
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/**
+context/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# NPM
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+
+# TypeScript
+*.tsbuildinfo
+
+# Tests
+coverage/
+.nyc_output/
+
+# Dev
+dev/
+dev_firefox/
+dev_safari/
+
+# Prod
+dist/
+dist_firefox/
+dist_safari/
+builds/
+changelogs/
+assets/shared
+
+# Xcode
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip

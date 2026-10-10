@@ -1,0 +1,80 @@
+/* Floating Button Styles */
+#bili-sub-copier-btn {
+    position: fixed;
+    right: 30px;
+    bottom: 120px;
+    height: 48px;
+    padding: 0 20px;
+    background-color: #00aeec; /* Bilibili Blue */
+    color: white;
+    border-radius: 24px; /* Pill shape */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 174, 236, 0.4);
+    z-index: 2147483646;
+    pointer-events: auto;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#bili-sub-copier-btn:hover {
+    background-color: #00bdfa;
+    box-shadow: 0 6px 16px rgba(0, 174, 236, 0.5);
+    transform: translateY(-2px);
+}
+
+#bili-sub-copier-btn svg {
+    pointer-events: none;
+}
+
+/* YouTube 主题：红色 */
+#bili-sub-copier-btn.yt-theme {
+    background-color: #ff0000; /* YouTube Red */
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.4);
+}
+
+#bili-sub-copier-btn.yt-theme:hover {
+    background-color: #cc0000;
+    box-shadow: 0 6px 16px rgba(255, 0, 0, 0.5);
+}
+
+#bili-sub-copier-btn[data-mode="transcribe"]:not(.yt-theme) {
+    background-color: #fb8c00;
+    box-shadow: 0 4px 12px rgba(251, 140, 0, 0.4);
+}
+
+#bili-sub-copier-btn[data-mode="transcribe"]:not(.yt-theme):hover {
+    background-color: #ef6c00;
+    box-shadow: 0 6px 16px rgba(239, 108, 0, 0.5);
+}
+
+
+/* Toast Notification Styles */
+#bili-sub-toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-20px);
+    background-color: #4CAF50; /* Green for success */
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    z-index: 2147483647;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    pointer-events: none;
+}
+
+#bili-sub-toast.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
